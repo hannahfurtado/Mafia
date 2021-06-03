@@ -1,5 +1,7 @@
-var text = document.querySelector("h1")
-
-text.addEventListener("click", function(){
- document.body.style.backgroundColor = "cyan"
-})
+var text = "h1";
+var joinCode = "abcd";
+var playerCount = 0;
+if (lobbyCode == joinCode)  {
+    playerCount = (playerCount + 1);
+    setText(text, ("players = " + playerCount));
+}
