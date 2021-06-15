@@ -1,9 +1,9 @@
-var app = require('express')();
-var http = require('http').createServer(app);
-var io = require('socket.io')(http);
+const app = require('express')();
+const http = require('http').createServer(app);
+const io = require('socket.io')(http);
 
 app.get('/', (req, res) => {
-    res.sendFile(_dirname + '/index.html');
+    res.sendFile(__dirname + '/public/index.html');
 });
 
 io.on('connection', (socket) =>{
